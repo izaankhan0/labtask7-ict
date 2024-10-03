@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Website</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 97vh;
+        }
+        button{
+            padding: 10px 30px;
+            font-size: 26px;
+            border-radius: 10px;
+            border: solid rgb(109, 0, 0) 20px;
+            background-color: aqua;
+            font-weight: 700;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            cursor: pointer;
+            transition: ease 200ms;
+        }
+        button:hover{
+            background-color: red;
+            border-color: rgb(0, 87, 87);
+        }
+        .red{
+            background-color: red;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .green{
+            background-color: green;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+        .purple{
+            background-color: purple;
+        }
+        .orange{
+            background-color: orange;
+        }
+    </style>
+</head>
+<body class="body">
+        <button onclick="color()">
+            Color Changer
+        </button>
+
+        <script>
+            let count =-1;
+            function color(){
+                if(count == 6){
+                    count = -1
+                }
+                count++
+                if(count == 0){
+                    document.querySelector("body").classList.add("red")
+                } else if(count == 1){
+                    console.log("flag")
+                    document.querySelector("body").classList.add("blue")
+                } else if(count == 2){
+                    document.querySelector("body").classList.add("green")
+                } else if(count == 3){
+                    document.querySelector("body").classList.add("yellow")
+                } else if(count == 4){
+                    document.querySelector("body").classList.add("purple")
+                } else if(count == 5){
+                    document.querySelector("body").classList.add("orange")
+                }
+
+            }
+        </script>
+</body>
+</html>

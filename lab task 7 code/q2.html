@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Website</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 97vh;
+        }
+        button{
+            padding: 10px 30px;
+            font-size: 26px;
+            border-radius: 10px;
+            border: solid rgb(109, 0, 0) 20px;
+            background-color: aqua;
+            font-weight: 700;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            cursor: pointer;
+            transition: ease 200ms;
+        }
+        button:hover{
+            background-color: red;
+            border-color: rgb(0, 87, 87);
+        }
+    </style>
+</head>
+<body class="body">
+        <button onclick="alertrun()">
+            Alert
+        </button>
+        <script>
+            function alertrun(){
+                alert("Click me again for this alert")
+            }
+        </script>
+</body>
+</html>
